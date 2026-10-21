@@ -8,20 +8,18 @@ Anomaly Detection (AD) in multivariate time series (MTS) is a critical task for 
 Given a python environment (note: this project is fully tested under python 3.13), install the fllowing dependency:
 
 ```
-!pip install git+https://github.com/ahstat/affiliation-metrics-py.git
+!pip install torch-geometric
 ```
 
 Please run the following command to train and test the model:
 
 ```
-python Launch_Exps.py --config-file $1 --dataset-name $2
+!python run.py --dataset-name $1
 ```
 
 Note: replace $# with available options
 
 ## How to Use
-1. When using your own data, please put your data files under [DATA](SCCL-AD/DATA).
+1. When using your own data, please put your data files under [DATA](CSGL-AD/DATA).
 
-2. Create a config file which contains your hyper-parameters under [config_files](SCCL-AD/config_files).  
-
-3. Add your data loader to the function ''load_data'' in the [loader/LoadData.py](SCCL-AD/loader/LoadData.py).
+2. Add your data loader to the function ''load_data'' in the [LoadData.py](CSGL-AD/LoadData.py).
