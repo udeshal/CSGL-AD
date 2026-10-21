@@ -20,6 +20,6 @@ Please run the following command to train and test the model:
 Note: replace $# with available options
 
 ## How to Use
-1. When using your own data, please put your data files under [DATA](CSGL-AD/DATA).
+1. When using your own data, please put your data files under [DATA](DATA).
 
-2. Add your data loader to the function ''load_data'' in the [DataLoader.py](CSGL-AD/DataLoader.py).
+2. Add your data loader to the function ''load_data'' in the [DataLoader.py](DataLoader.py).
